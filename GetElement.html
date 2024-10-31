@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>Paragraph</p>
+    <p id="p1">Paragraph 1</p>
+    <p class="p2">Paragraph 2</p>
+
+    <script>
+
+
+// Finding HTML Elements 
+    console.log("Get ELement By ClassName",document.getElementsByClassName("p2")[0].innerHTML);
+    console.log("Get ELement By Id",document.getElementById("p1").innerHTML);
+    console.log("Get ELement By TagName",document.getElementsByTagName("p")[0].innerHTML);
+
+
+    //Getting html elements
+    console.log("Getting HTML elements");
+    let ele1=document.getElementById("p1");
+    console.log(ele1.innerText);
+
+    let ele2=document.getElementsByTagName("p");
+    console.log(ele2.length);
+
+    // Changing HTML Elements
+    document.getElementsByClassName("p2")[0].innerHTML="Hi";
+    document.getElementById("p1").innerHTML="hello";
+
+
+
+    </script>
+</body>
+</html>

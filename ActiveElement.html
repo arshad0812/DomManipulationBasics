@@ -1,0 +1,32 @@
+<html>
+
+<head>
+    <title>JS DOM in Tamil</title>
+</head>
+
+<body onclick="mthd1()">
+    <h2>Active Element</h2>
+    <p id="activeele">Click any element to make it active element</p>
+    <label for="btn1">Button</label>
+    <button id="btn1">Click me</button>
+    <br>
+    <br>
+    <label for="textbox">TextBox</label>
+    <input type="text" name="textbox" id="textbox">
+ 
+    
+</body>
+
+<script>
+
+//Active Element
+function mthd1(){
+    console.log(document.activeElement);
+    document.getElementById("activeele").innerHTML=document.activeElement.tagName;
+}
+
+
+
+</script>
+
+</html>

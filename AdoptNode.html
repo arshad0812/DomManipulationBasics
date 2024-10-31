@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <iframe id="myFrame" src="file1.html" frameborder="0" style="width: 300px;height: 300px;border:1px solid green"></iframe>
+</head>
+<body>
+    <button onclick="myFunction()">Try it</button>
+
+    <script>
+    function myFunction() {
+      const frame = document.getElementById("myFrame");
+      const h1 = frame.contentWindow.document.getElementsByTagName("H1")[0];
+      const node = document.adoptNode(h1);
+      document.body.appendChild(h1);
+    }
+</script>
+</body>
+</html>
