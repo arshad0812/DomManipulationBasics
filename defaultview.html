@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>DefaultView</h1>
+    <p id="p1">View</p>
+    <script>
+        console.log(document.defaultView.innerWidth,document.defaultView.innerHeight);
+        const width=document.defaultView.innerWidth;
+        const height=document.defaultView.innerHeight;
+        document.getElementById("p1").innerHTML="Default View Width: "+width+"px, Height: "+height+"px";
+    </script>
+</body>
+</html>

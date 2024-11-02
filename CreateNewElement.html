@@ -6,7 +6,9 @@
     <title>Document</title>
 </head>
 <body>
-    
+    <div id="div">
+        <h1 class="h1">Create Element</h1>
+    </div>
 </body>
 
 <script>
@@ -15,6 +17,11 @@
     newelement.style.backgroundColor = 'yellow';
     newelement.style.padding = '20px';
     newelement.style.color='black';
+    newelement.id="newelemenr";
     document.body.appendChild(newelement);
+
+    const secondnewleement=document.createElement("p");
+    secondnewleement.textContent = 'This is a second paragraph';
+    document.getElementsByClassName("h1")[0].appendChild(secondnewleement);
 </script>
 </html>
