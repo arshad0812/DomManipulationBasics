@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Form</h2>
+    <form action="" id="Form1">
+        <label for="textbox1">Name</label>
+        <input id="textbox1" type="text">
+        <br>
+        <br>
+        <label for="textbox1">Email</label>
+        <input id="textbox2" type="text">
+        <p>Change this to Form Tag</p>
+    </form>
+
+    <br><br>
+    <H2>Form 2</H2>
+    <form action="" id="Form1">
+        <label for="textbox1">Name</label>
+        <input id="textbox1" type="text">
+        <br>
+        <br>
+        <label for="textbox1">Email</label>
+        <input id="textbox2" type="text">
+        <p id="para">Change this to Form Tag</p>
+    </form>
+
+    <script>
+        console.log(document.forms[0].innerHTML);
+        const form=document.forms.namedItem("Form1").innerHTML;
+        document.getElementById("para").innerHTML=form;
+    </script>
+</body>
+</html>
