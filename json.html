@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Create Object from JSON String</h2>
+
+<p id="demo"></p>
+
+<script>
+const text = `{"name":"arshad","Id":"iarshad2000@gmail.com"}`;
+const arr=`[{"name":"arshad","Id":"1"},{"name":"abi","Id":"2"}]`;
+
+const obj = JSON.parse(text);
+const obj2=JSON.parse(arr);
+document.getElementById("demo").innerHTML =obj.name;
+console.log(obj2[0].name);
+</script>
+
+</body>
+</html>

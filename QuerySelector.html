@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p class="para1">Query 1</p>
+    <p id="para2">Query 2</p>
+    <p>Query 3</p>
+    <script>
+        console.log(document.querySelector("p.para1").style.color="red");
+        console.log(document.querySelector("p#para2").style.border="1px solid green");
+        console.log(document.querySelectorAll("p")[0]);
+    </script>
+</body>
+</html>

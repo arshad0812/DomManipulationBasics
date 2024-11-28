@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="para1">Total images</p>
+    <img src="https://www.w3schools.com/images/lamp.jpg" alt="image1">
+    <script>
+        console.log("Image size:",document.images[0].width,document.images[0].height);
+        console.log("Images length:"+document.images.length+"\n Alt text:"+document.images[0].alt+"\n Image src:"+document.images[0].src);
+        document.getElementById("para1").innerHTML = document.images.length;
+    </script>
+</body>
+</html>

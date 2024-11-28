@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .newclass{
+            color: red;
+        }
+
+        .new2class{
+            color:green;
+        }
+
+    </style>
+</head> 
+<body>
+    <div id="container">    
+        <p>Hi</p>
+        <p>Hello</p>
+    </div>
+
+    <script>
+        document.getElementById("container").classList.toggle("newclass");
+        const classlist = document.getElementById("container").classList;
+        console.log(classlist);
+
+        //Contains
+        console.log(classlist.contains("newclass"));
+
+        //replace
+        console.log(classlist.replace("newclass","new2class"));
+
+
+    </script>
+</body>
+</html>
